@@ -106,7 +106,7 @@ variable "autonomous_database_cpu_core_count" {
 }
 
 variable "autonomous_database_data_storage_size_in_tbs" {
-  default = 1
+  default = 0.02
 }
 
 variable "autonomous_database_data_safe_status" {
@@ -136,7 +136,7 @@ variable "autonomous_database_is_auto_scaling_enabled" {
 }
 
 variable "autonomous_database_is_free_tier" {
-  default = false
+  default = true
 }
 variable "autonomous_database_visibility" {
   default = "Public"
