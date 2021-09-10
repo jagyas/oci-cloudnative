@@ -123,11 +123,11 @@ variable "node_pool_boot_volume_size_in_gbs" {
   description = "Specify a custom boot volume size (in GB)"
 }
 variable "image_operating_system" {
-  default     = "Canonical Ubuntu"
+  default     = "Oracle Linux"
   description = "The OS/image installed on all nodes in the node pool."
 }
 variable "image_operating_system_version" {
-  default     = "20.04"
+  default     = "7.9"
   description = "The OS/image version installed on all nodes in the node pool."
 }
 variable "generate_public_ssh_key" {
