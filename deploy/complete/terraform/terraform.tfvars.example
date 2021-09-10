@@ -39,15 +39,15 @@ existent_encryption_key_id    = "" # e.g.: "ocid1.key.oc1..."
 
 # Enable Cluster Autoscaler
 cluster_autoscaler_enabled              = true
-cluster_autoscaler_min_nodes            = 3
-cluster_autoscaler_max_nodes            = 10
+cluster_autoscaler_min_nodes            = 1
+cluster_autoscaler_max_nodes            = 1
 existent_oke_nodepool_id_for_autoscaler = "" # e.g.: ocid1.nodepool.oc1...
 
 # OKE Worker Nodes (Compute)
-num_pool_workers                          = 3 # If autoscaler is enabled, uses the value from cluster_autoscaler_min_nodes for the initial node pool number of nodes
-node_pool_shape                           = "VM.Standard.E3.Flex"
+num_pool_workers                          = 1 # If autoscaler is enabled, uses the value from cluster_autoscaler_min_nodes for the initial node pool number of nodes
+node_pool_shape                           = "VM.Standard.A1.Flex"
 node_pool_node_shape_config_ocpus         = 1
-node_pool_node_shape_config_memory_in_gbs = 16
+node_pool_node_shape_config_memory_in_gbs = 2
 generate_public_ssh_key                   = true # if true, auto generate public and private keys and assign to the node pool.
 public_ssh_key                            = ""   # if generate_public_ssh_key=true, public_ssh_key is ignored. if generate_public_ssh_key=false, assign public_ssh_key, that can be nothing if ""
 
